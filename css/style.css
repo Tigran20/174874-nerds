@@ -1,8 +1,11 @@
 body{
-    font-size: 14px;
-    line-height: ;
+    font-size: 16px;
+    line-height: 22px;
     color: #d4d2cf;
-    font-weight: ;
-    font-family: ;
-    background-color: #070707;
+    font-weight: 500;
+    font-family: font-family: 'Roboto', sans-serif;;
+    background-color: #eeeeee;
+    
+    text-transform: uppercase;
 }
+
