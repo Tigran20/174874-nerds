@@ -1,0 +1,15 @@
+body{
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+    font-weight: bold;
+    font-family: font-family: 'Roboto', sans-serif;
+}
+
+h1, b{
+    font-size: 36px;
+    line-height: 36px;
+    color: #000;
+    font-weight: bold;
+    font-family: font-family: 'Roboto', sans-serif;
+}
