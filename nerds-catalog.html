@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Nerds</title>
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">
@@ -41,27 +43,32 @@
                 <div class="shop-filter">
                     <form>
                         <h3>Стоимость:</h3>
-                        <input type="range" min="0" max="15000" step="1" value="50"><br>
+                        <input type="range" min="0" max="15000" step="1" value="50">
                         <span>От</span>
                         <span>До</span>
                         
                         <h3 class="shop-title-grid">Сетка:</h3>
-                        <input type="radio" name="radio" checked >Адаптивная<br>
-                        <input type="radio" name="radio">Фиксированная<br>
+                        <input type="radio" name="radio" checked >Адаптивная
+                        <input type="radio" name="radio">Фиксированная
                         <input type="radio" name="radio">Резиновая
                         
                         <h3 class="shop-title-featuresr">Особенности:</h3>
-                        <input type="checkbox" name="feature-slider" value="slider"  id="cb-slider" checked>
-                        <label>Слайдер</label>
-                        <input type="checkbox" name="block-features" value="block-features" id="block-features">
-                        <label>Блок преимуществ</label>
-                        <input type="checkbox" name="news" value="news" checked id="news">
-                        <label>Новости</label>
-                        <input type="checkbox" name="gallery" value="gallery" id="gallery">
-                        <label>Галерея</label>
-                        <input type="checkbox" name="basket" value="basket" id="basket">
-                        <label>Корзина</label>
-                        
+                        <label>Слайдер
+                            <input type="checkbox" name="feature-slider" value="slider" checked>
+                        </label>
+                        <label>Блок преимуществ
+                            <input type="checkbox" name="block-features" value="block-features">
+                        </label>
+                        <label>Новости
+                            <input type="checkbox" name="news" value="news" checked>
+                        </label>
+                        <label>Галерея
+                            <input type="checkbox" name="gallery" value="gallery">
+                        </label>
+                        <label>Корзина
+                            <input type="checkbox" name="basket" value="basket">
+                        </label>
+
                         <button type="submit" name="btn" value="Показать"></button>
                     </form>
                 </div>
