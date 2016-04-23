@@ -1,10 +1,9 @@
-body{
+body, h1, h2, h3{
     font-size: 16px;
     line-height: 22px;
-    color: #d4d2cf;
+    color: #000000;
     font-weight: 500;
     font-family: font-family: 'Roboto', sans-serif;;
-    background-color: #eeeeee;
     
     text-transform: uppercase;
 }
