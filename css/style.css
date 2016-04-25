@@ -4,6 +4,10 @@ body{
     color: #283136;
     font-weight: 600;
     font-family: font-family: 'Roboto', sans-serif;
+    width: 1200px;
+    height: 2256px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 h1, b{
@@ -12,4 +16,81 @@ h1, b{
     color: #000;
     font-weight: bold;
     font-family: font-family: 'Roboto', sans-serif;
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container{
+    width: 880px;
+    margin: 0 auto;
+}
+
+.main-header{
+    background-color: #eee;
+    margin-bottom: 80px;
+}
+
+.slider-2, .slider-3{
+    display: none;
+}
+
+.features{
+    width: 880px;
+    height: 380px;
+}
+
+.features-item{
+    float: left;
+    width: 240px;
+    margin-right: 80px;
+    margin-bottom: 60px;
+}
+
+.features-item:last-child{
+    margin-right: 0;
+}
+
+.features-about{
+    float: left;
+    width: 600px;
+    margin-bottom: 60px;
+}
+
+.list-order{
+    float: left;
+    width: 250px;
+    margin-bottom: 60px;
+}
+
+.we-made{
+    float: left;
+    width: 880px;
+}
+
+.shop-filter{
+    width: 240px;
+    float: left;
+    margin-right: 80px;
+}
+
+.shop-item{
+    width: 560px;
+    float: left;
+}
+
+article{
+    float: left;
+    margin-right: 80px;
+}
+article:nth-child(odd){
+    margin-right: 0px;
 }
