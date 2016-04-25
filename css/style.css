@@ -36,7 +36,49 @@ p{
 
 .main-header{
     background-color: #eee;
+    min-height: 436px;
     margin-bottom: 80px;
+}
+
+.logo{
+    display: inline-block;
+    float: left;
+    margin-right: 180px;
+    margin-top: 25px;
+}
+
+.main-navigation{
+    min-width: 400px;
+    margin-top: 45px;
+    float: left;
+    text-transform: uppercase;
+}
+
+.shop-basket{
+    text-transform: uppercase;
+    float: right;
+    margin-top: 45px;
+    width: 70px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 30px;
+    color: #283136;
+    font-weight: 600;
+    font-family: font-family: 'Roboto', sans-serif;
 }
 
 .slider-2, .slider-3{
@@ -46,6 +88,8 @@ p{
 .features{
     width: 880px;
     height: 380px;
+    border-bottom: 2px solid #eee;
+    margin-top: 50px;
 }
 
 .features-item{
@@ -59,21 +103,54 @@ p{
     margin-right: 0;
 }
 
+.features-title{
+    text-transform: uppercase;
+}
+
+.features p{
+    font-size: 15px;
+    line-height: 22px;
+}
+
 .features-about{
     float: left;
     width: 600px;
     margin-bottom: 60px;
+    margin-right: 70px;
 }
 
 .list-order{
     float: left;
-    width: 250px;
-    margin-bottom: 60px;
+    width: 440px;
+    margin-top: 30px;
+}
+
+.list-order-title, .we-work-title{
+    text-transform: uppercase;
+}
+
+.we-work{
+    margin-top: 80px;
 }
 
 .we-made{
-    float: left;
     width: 880px;
+    margin-bottom: 60px;
+}
+
+.we-made-Glukhanko{
+    float: left;
+    margin-right: 120px;
+    padding-top: 15px;
+}
+
+.we-made-HTML-AC{
+    float: left;
+    margin-right: 120px;
+}
+
+.we-made-Borodinski{
+    float: left;
 }
 
 .shop-filter{
@@ -93,4 +170,22 @@ article{
 }
 article:nth-child(odd){
     margin-right: 0px;
+}
+
+.main-footer{
+    margin-top: 80px;
+    height: 215px;
+}
+
+.social{
+    float: left;
+    width: 240px;
+}
+
+.offer{
+    float: left;
+}
+
+.offer p{
+    margin-top: 10px;
 }
