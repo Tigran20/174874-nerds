@@ -81,6 +81,14 @@ a{
     font-family: font-family: 'Roboto', sans-serif;
 }
 
+.main-navigation ul li a:hover{
+    color: #fb565a;
+}
+
+.shop-basket a:hover{
+    color: #fb565a;
+}
+
 .slider-2, .slider-3{
     display: none;
 }
