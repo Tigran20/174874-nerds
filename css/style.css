@@ -36,8 +36,8 @@ p{
 
 .main-header{
     background-color: #eee;
-    min-height: 436px;
-    margin-bottom: 80px;
+    min-height: 330px;
+    margin-bottom: 70px;
 }
 
 .logo{
@@ -45,11 +45,13 @@ p{
     float: left;
     margin-right: 180px;
     margin-top: 25px;
+    margin-bottom: 60px;
 }
 
 .main-navigation{
     min-width: 400px;
-    margin-top: 45px;
+    margin-top: 55px;
+    margin-bottom: 60px;
     float: left;
     text-transform: uppercase;
 }
@@ -57,8 +59,9 @@ p{
 .shop-basket{
     text-transform: uppercase;
     float: right;
-    margin-top: 45px;
+    margin-top: 55px;
     width: 70px;
+    margin-bottom: 60px;
 }
 
 ul{
@@ -98,6 +101,10 @@ a{
     height: 380px;
     border-bottom: 2px solid #eee;
     margin-top: 50px;
+}
+
+.features-we-work{
+    float: right;
 }
 
 .features-item{
@@ -159,6 +166,20 @@ a{
 
 .we-made-Borodinski{
     float: left;
+}
+
+.shop-title{
+    font-size: 40px;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: normal;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.shop{
+    width: 880px;
+    min-height: 800px;
 }
 
 .shop-filter{

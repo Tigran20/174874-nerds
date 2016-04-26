@@ -8,14 +8,14 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <header class="main-header">
+        <header class="main-header clearfix">
             <div class="container">
                 <div class="logo">
                     <a href="index.html">
                         <img src="./img/logo.png" width="140" height="55" alt="Nerds">
                     </a>
                 </div>
-                <nav class="main-navigation">
+                <nav class="main-navigation clearfix">
                     <ul>
                         <li>
                             <a href="#">Студия</a>
@@ -31,73 +31,73 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="shop-basket">
+                <div class="shop-basket clearfix">
                     <a href="#">Корзина</a>
                 </div>
-                <h1>Добро пожаловать в магазин<br>
-                    готовых макетов
-                </h1>
+                <span class="shop-title">Добро пожаловать в магазин<br> готовых макетов</span>
             </div>
         </header>
         <main class="main-content">
             <div class="container clearfix">
-                <div class="shop-filter">
-                    <form>
-                        <h3>Стоимость:</h3>
-                        <input type="range" min="0" max="15000" step="1" value="50">
-                        <span>От</span>
-                        <span>До</span>
-                        
-                        <h3 class="shop-title-grid">Сетка:</h3>
-                        <input type="radio" name="radio" checked >Адаптивная<br>
-                        <input type="radio" name="radio">Фиксированная<br>
-                        <input type="radio" name="radio">Резиновая
-                        
-                        <h3 class="shop-title-featuresr">Особенности:</h3>
-                        <label>Слайдер
-                            <input type="checkbox" name="feature-slider" value="slider" checked><br>
-                        </label>
-                        <label>Блок преимуществ
-                            <input type="checkbox" name="block-features" value="block-features"><br>
-                        </label>
-                        <label>Новости
-                            <input type="checkbox" name="news" value="news" checked><br>
-                        </label>
-                        <label>Галерея
-                            <input type="checkbox" name="gallery" value="gallery"><br>
-                        </label>
-                        <label>Корзина
-                            <input type="checkbox" name="basket" value="basket"><br>
-                        </label>
+                <div class="shop">
+                    <div class="shop-filter">
+                        <form>
+                            <h3>Стоимость:</h3>
+                            <input type="range" min="0" max="15000" step="1" value="50">
+                            <span>От</span>
+                            <span>До</span>
 
-                        <input type="submit" name="btn" value="Показать">
-                    </form>
-                </div>
-                <div class="shop-item">
-                    <div class="filter">
-                        <span>Сортировать:</span>
-                        <a href="">по цене</a>
-                        <a href="">по типу</a>
-                        <a href="">по функционалу</a>
+                            <h3 class="shop-title-grid">Сетка:</h3>
+                            <input type="radio" name="radio" checked >Адаптивная<br>
+                            <input type="radio" name="radio">Фиксированная<br>
+                            <input type="radio" name="radio">Резиновая
+
+                            <h3 class="shop-title-featuresr">Особенности:</h3>
+                            <label>Слайдер
+                                <input type="checkbox" name="feature-slider" value="slider" checked><br>
+                            </label>
+                            <label>Блок преимуществ
+                                <input type="checkbox" name="block-features" value="block-features"><br>
+                            </label>
+                            <label>Новости
+                                <input type="checkbox" name="news" value="news" checked><br>
+                            </label>
+                            <label>Галерея
+                                <input type="checkbox" name="gallery" value="gallery"><br>
+                            </label>
+                            <label>Корзина
+                                <input type="checkbox" name="basket" value="basket"><br>
+                            </label>
+
+                            <input type="submit" name="btn" value="Показать">
+                        </form>
                     </div>
-                    <article>
-                        <img src="./img/item-shop-1.jpg" width="240" height="240" alt="Aviator">
-                    </article>
-                    <article>
-                        <img src="./img/item-shop-2.jpg" width="240" height="240" alt="Sunset">
-                    </article>
-                    <article>
-                        <img src="./img/item-shop-3.jpg" width="240" height="240" alt="Forte">
-                    </article>
-                    <article>
-                        <img src="./img/item-shop-4.jpg" width="240" height="240" alt="Modern Organic Thai">
-                    </article>
-                    <article>
-                        <img src="./img/item-shop-5.jpg" width="240" height="240" alt="Avenue">
-                    </article>
-                    <article>
-                        <img src="./img/item-shop-6.jpg" width="240" height="240" alt="Sovetail">
-                    </article>
+                    <div class="shop-item">
+                        <div class="filter">
+                            <span>Сортировать:</span>
+                            <a href="">по цене</a>
+                            <a href="">по типу</a>
+                            <a href="">по функционалу</a>
+                        </div>
+                        <article>
+                            <img src="./img/item-shop-1.jpg" width="240" height="240" alt="Aviator">
+                        </article>
+                        <article>
+                            <img src="./img/item-shop-2.jpg" width="240" height="240" alt="Sunset">
+                        </article>
+                        <article>
+                            <img src="./img/item-shop-3.jpg" width="240" height="240" alt="Forte">
+                        </article>
+                        <article>
+                            <img src="./img/item-shop-4.jpg" width="240" height="240" alt="Modern Organic Thai">
+                        </article>
+                        <article>
+                            <img src="./img/item-shop-5.jpg" width="240" height="240" alt="Avenue">
+                        </article>
+                        <article>
+                            <img src="./img/item-shop-6.jpg" width="240" height="240" alt="Sovetail">
+                        </article>
+                    </div>
                 </div>
                 <div class="section-navigation">
                     <span>1</span>
@@ -111,7 +111,6 @@
             </div> 
         </main>
         <footer class="main-footer>">
-            <div class="map"></div>
             <div class="container clearfix">
                 <div class="social">
                     <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
