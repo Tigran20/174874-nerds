@@ -70,6 +70,10 @@ p{
     margin-right: 50px;
 }
 
+.main-navigation li:last-child{
+    margin-right: 30px;
+}
+
 .main-navigation a{
     display: block;
     text-decoration: none;
@@ -84,25 +88,42 @@ p{
     color: #fb565a;
 }
 
+.main-navigation a:active{
+    color: #afafaf;
+}
+
 .shop-basket{
     float: right;
-    text-transform: uppercase;
+    max-width: 110px;
+    position: relative;
     margin-top: 55px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 30px;
-    font-family: "Roboto", "Arial", sans-serif;
     vertical-align: top;
 }
 
 .shop-basket a{
     display: block;
     text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    font-size: 14px;
+    line-height: 30px;
+    font-family: "Roboto", "Arial", sans-serif;
+    text-transform: uppercase;
     color: #283136;
 }
 
 .shop-basket a:hover{
     color: #fb565a;
+}
+
+.shop-basket::before{
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -30px;
+    width: 18px;
+    height: 18px;
+    background: transparent url("../img/basket.png") no-repeat;
 }
 
 .slider{
@@ -247,12 +268,36 @@ p{
     background-color: #fb565a;
 }
 
+.red:hover{
+    background-color: #d6494d;
+}
+
+.red:active{
+    background-color: #b63538;
+}
+
 .green{
     background-color: #00ca74;
 }
 
+.green:hover{
+    background-color: #01a25e;
+}
+
+.green:active{
+    background-color: #009053;
+}
+
 .yellow{
     background-color: #efc84a;
+}
+
+.yellow:hover{
+    background-color: #d6ae2c;
+}
+
+.yellow:active{
+    background-color: #c09b24;
 }
 
 .features-item:last-child{
@@ -328,19 +373,42 @@ p{
 
 .we-made-Glukhanko{
     float: left;
+    width: 200px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 70px;
     margin-right: 120px;
-    padding-top: 70px;
+    background: url(../img/order-1.png) no-repeat;
+}
+
+.we-made-Glukhanko:hover{
+    float: left;
+    background: url(../img/order-1-hover.png) no-repeat;
 }
 
 .we-made-HTML-AC{
     float: left;
+    width: 200px;
+    height: 70px;
+    margin-top: 50px;
     margin-right: 120px;
-    padding-top: 55px;
+    background: url(../img/order-2.png) no-repeat;
+}
+
+.we-made-HTML-AC:hover{
+    background: url(../img/order-2-hover.png) no-repeat;
 }
 
 .we-made-Borodinski{
     float: left;
-    padding-top: 45px;
+    width: 200px;
+    height: 90px;
+    margin-top: 40px;
+    background: url(../img/order-3.png) no-repeat;
+}
+
+.we-made-Borodinski:hover{
+    background: url(../img/order-3-hover.png) no-repeat;
 }
 
 .shop-title{
@@ -382,11 +450,35 @@ article:nth-child(odd){
 
 .social{
     float: left;
-    width: 240px;
+    margin-top: 80px;
+    margin-right: 55px;
+}
+
+.social-btn{
+    display: inline-block;
+    width: 63px;
+    height: 63px;
+    margin-right: 20px;
+    font-size: 0;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+.social-btn-vk{
+    background: url(../img/social-vk.png) no-repeat;
+}
+
+.social-btn-fb{
+    background: url(../img/social-fb.png) no-repeat;
+}
+
+.social-btn-inst{
+    background: url(../img/social-inst.png) no-repeat;
 }
 
 .offer{
     float: left;
+    margin-top: 80px;
 }
 
 .offer p{
