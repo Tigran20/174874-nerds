@@ -116,6 +116,14 @@ p{
     color: #fb565a;
 }
 
+.shop-basket a:active{
+    color: #afafaf;
+}
+
+.shop-basket:active::before{
+    opacity: 0.4;
+}
+
 .shop-basket::before{
     content: "";
     position: absolute;
@@ -403,12 +411,68 @@ p{
     float: left;
     width: 200px;
     height: 90px;
-    margin-top: 40px;
+    margin-top: 42px;
     background: url(../img/order-3.png) no-repeat;
 }
 
 .we-made-Borodinski:hover{
     background: url(../img/order-3-hover.png) no-repeat;
+}
+
+.map{
+    position: relative;
+}
+
+.contacts{
+    position: absolute;
+    top: 86px;
+    left: 160px;
+    width: 250px;
+    height: 245px;
+    background-color: #ffffff;
+}
+
+.container-cont{
+    width: 210px;
+    margin-left: 22px;
+    margin-top: 27px;
+}
+
+.contacts span{
+    font-weight: 600;
+}
+
+.street{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #666666;
+}
+
+.tel{
+    margin-bottom: 30px;
+    color: #666666;
+}
+
+.contacts .btn{
+    display: block;
+    width: 204px;
+    padding: 10px 0;
+    margin-top: 25px;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    background: #fb565a;
+    border-radius: 3px;
+}
+
+.contacts .btn:hover{
+    background-color: #d6494d;
+}
+
+.contacts .btn:active{
+    background-color: #b63538;
 }
 
 .shop-title{
@@ -468,12 +532,36 @@ article:nth-child(odd){
     background: url(../img/social-vk.png) no-repeat;
 }
 
+.social-btn-vk:hover{
+    background: url(../img/social-vk-hover.png) no-repeat;
+}
+
+.social-btn-vk:active{
+    background: url(../img/social-vk-active.png) no-repeat;
+}
+
 .social-btn-fb{
     background: url(../img/social-fb.png) no-repeat;
 }
 
+.social-btn-fb:hover{
+    background: url(../img/social-fb-hover.png) no-repeat;
+}
+
+.social-btn-fb:active{
+    background: url(../img/social-fb-active.png) no-repeat;
+}
+
 .social-btn-inst{
     background: url(../img/social-inst.png) no-repeat;
+}
+
+.social-btn-inst:hover{
+    background: url(../img/social-inst-hover.png) no-repeat;
+}
+
+.social-btn-inst:active{
+    background: url(../img/social-inst-active.png) no-repeat;
 }
 
 .offer{
