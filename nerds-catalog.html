@@ -5,10 +5,10 @@
         <title>Nerds</title>
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <header class="main-header clearfix">
+        <header class="inner-header clearfix">
             <div class="container">
                 <div class="logo">
                     <a href="index.html">
@@ -42,34 +42,76 @@
                 <div class="shop clearfix">
                     <div class="shop-filter">
                         <form>
-                            <h3>Стоимость:</h3>
-                            <input type="range" min="0" max="15000" step="1" value="50">
-                            <span>От</span>
-                            <span>До</span>
+                            <span>Стоимость:</span>
+                            <div class="range-filter">
+                                <div class="range-controls">
+                                    <div class="scale">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="toggle toggle-min"></div>
+                                <div class="toggle toggle-max"></div>
+                                </div>
+                                <div class="price-controls">
+                                    <label class="min-price">ОТ <input name="min-price" type="text" value="0"></label>
+                                    <label class="max-price">ДО <input name="max-price" type="text" value="15000"></label>
+                                </div>
+                            </div>
+                            <div class="shop-grid">
+                                <span class="shop-grid-title">Сетка:</span>
+                                <div class="shop-grid-elements">
+                                    <input class="radio" type="radio" id="radio-1" name="radio" checked >
+                                    <label for="radio-1">
+                                        <span></span>
+                                        Адаптивная
+                                    </label><br>
+                                    
+                                    <input class="radio" type="radio" id="radio-2" name="radio">
+                                    <label for="radio-2">
+                                        <span></span>
+                                        Фиксированная
+                                    </label><br>
+                                    
+                                    <input class="radio" type="radio" id="radio-3" name="radio">
+                                    <label for="radio-3">
+                                        <span></span>
+                                        Резиновая
+                                    </label>
+                                </div>
+                            </div>
+                                
+                            <span class="shop-title-features">Особенности:</span>
+                            <div class="shop-grid-elements">
+                                <input type="checkbox" id="slider" name="slider" checked>
+                                <label for="slider">
+                                    <span></span>
+                                    Слайдер
+                                </label><br>
 
-                            <h3 class="shop-title-grid">Сетка:</h3>
-                            <input type="radio" name="radio" checked >Адаптивная<br>
-                            <input type="radio" name="radio">Фиксированная<br>
-                            <input type="radio" name="radio">Резиновая
+                                <input type="checkbox" id="block-features" name="block-features">
+                                <label for="block-features">
+                                    <span></span>
+                                    Блок преимуществ
+                                </label><br>
 
-                            <h3 class="shop-title-featuresr">Особенности:</h3>
-                            <label>Слайдер
-                                <input type="checkbox" name="feature-slider" value="slider" checked><br>
-                            </label>
-                            <label>Блок преимуществ
-                                <input type="checkbox" name="block-features" value="block-features"><br>
-                            </label>
-                            <label>Новости
-                                <input type="checkbox" name="news" value="news" checked><br>
-                            </label>
-                            <label>Галерея
-                                <input type="checkbox" name="gallery" value="gallery"><br>
-                            </label>
-                            <label>Корзина
-                                <input type="checkbox" name="basket" value="basket"><br>
-                            </label>
+                                <input type="checkbox" id="news" name="news" checked>
+                                <label for="news">
+                                    <span></span>
+                                    Новости
+                                </label><br>
 
-                            <input type="submit" name="btn" value="Показать">
+                                <input type="checkbox" id="galery" name="galery">
+                                <label for="galery">
+                                    <span></span>
+                                    Галерея
+                                </label><br>
+
+                                <input type="checkbox" id="basket" name="basket">
+                                <label for="basket">
+                                    <span></span>
+                                    Корзина
+                                </label><br>
+                            </div>
+                            <input type="submit" class="submit" value="Показать">
                         </form>
                     </div>
                     <div class="shop-item">
@@ -101,21 +143,32 @@
                 </div>
                 <div class="section-navigation">
                     <span>1</span>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a class="btn" href="#">Следующая</a>
+                    <a class="number" href="#">2</a>
+                    <a class="number" href="#">3</a>
+                    <a class="number-btn" href="#">Следующая</a>
                 </div>
             </div>
             <div class="map">
                 <img src="./img/map.jpg"  width="1200" height="420" alt="карта">
+                <div class="contacts">
+                    <div class="container-cont">
+                        <span>NЁRDS DESIGN STUDIO</span>
+                        <p class="street">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                        <p class="tel">тел. +7 (812) 275-75-75</p>
+                        <a class="btn" href="#">Напишите нам</a>
+                    </div>
+                </div>
             </div> 
         </main>
-        <footer class="main-footer>">
+        <footer class="main-footer">
             <div class="container clearfix">
                 <div class="social">
-                    <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-                    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-                    <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+                    <a class="social-btn social-btn-vk" href="#">Вконтакте
+                    </a>
+                    <a class="social-btn social-btn-fb" href="#">Фейсбук
+                    </a>
+                    <a class="social-btn social-btn-inst" href="#">Инстаграм
+                    </a>
                 </div>
                 <div class="offer">
                     <b>Давайте дружить, это выгодно!</b>
