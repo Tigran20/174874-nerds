@@ -688,7 +688,7 @@ input[type="checkbox"] + label span{
     width: 26px;
     height: 26px;
     margin: 0 4px 0 0;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
     vertical-align: top;
     background: url("../img/checkbox-unchecked.png") no-repeat;
     cursor: pointer;
