@@ -669,7 +669,7 @@ input[type="checkbox"]{
 }
 
 label{
-    cursor: default;
+    cursor: pointer;
 }
 
 input[type="checkbox"]:checked + label span{
@@ -726,9 +726,85 @@ input[type="checkbox"] + label span{
     float: left;
 }
 
+.filter{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.filter span{
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+.price, .type, .funct{
+    color: #c7c7c7;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: "Roboto", "Arial", sans-serif;
+    margin-right: 45px;
+    border-bottom: 1px dotted #00ca74; 
+}
+
+.price:hover, .type:hover, .funct:hover{
+    color: #000;
+}
+
+.price:active, .type:active, .funct:active{
+    border-bottom: 0 dotted #00ca74; 
+}
+
+.funct-arrow-top{
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    border: 6px solid transparent;
+    border-top: 10px solid #00ca74;
+    width: 0;
+    height: 0;
+}
+
+.funct-arrow-top:active{
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    border: 6px solid transparent;
+    border-top: 10px solid #000;
+    width: 0;
+    height: 0;
+}
+
+.funct-arrow-bottom{
+    position: absolute;
+    right: 0;
+    top: -1px;
+    border: 6px solid transparent;
+    border-bottom: 10px solid #c1c1c1;
+    width: 0;
+    height: 0;
+}
+
+.funct-arrow-bottom:active{
+    position: absolute;
+    right: 0;
+    top: -1px;
+    border: 6px solid transparent;
+    border-bottom: 10px solid #000;
+    width: 0;
+    height: 0;
+}
+
 article{
+    position: relative;
     float: left;
     margin-right: 80px;
+    margin-bottom: 110px;
 }
 
 article:nth-child(odd){
@@ -740,21 +816,9 @@ article:nth-child(odd){
     margin-bottom: 90px;
 }
 
-.section-navigation span{
+.section-navigation .number-active{
     margin-right: 5px;
     border: 2px solid #f1f1f1;
-    padding: 10px 14px;
-    border-radius: 2px;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 18px;
-    font-family: "Roboto", "Arial", sans-serif;
-}
-
-.section-navigation .number{
-    margin-right: 5px;
-    border: 2px solid #f1f1f1;
-    background: #f1f1f1;
     padding: 10px 14px;
     border-radius: 2px;
     text-decoration: none;
@@ -765,11 +829,41 @@ article:nth-child(odd){
     font-family: "Roboto", "Arial", sans-serif;
 }
 
+.section-navigation .number-active:hover{
+    border: 2px solid #f1f1f1;
+}
+
+.section-navigation .number-active:active{
+    border: 2px solid #f1f1f1;
+}
+
+.section-navigation .number{
+    margin-right: 5px;
+    background: #f1f1f1;
+    padding: 12px 16px;
+    border-radius: 2px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+.section-navigation .number:hover{
+    background: #e5e5e5;
+}
+
+.section-navigation .number:active{
+    background: #d5d5d5;
+    cursor: pointer;
+    box-shadow: inset 0 3px 0 0 #b5b5b5;
+}
+
 .number-btn{
     margin-right: 5px;
-    border: 2px solid #f1f1f1;
     background: #f1f1f1;
-    padding: 10px 29px;
+    padding: 12px 31px;
     border-radius: 2px;
     text-decoration: none;
     color: #000;
@@ -778,6 +872,16 @@ article:nth-child(odd){
     line-height: 18px;
     font-family: "Roboto", "Arial", sans-serif;
     text-transform: uppercase;
+}
+
+.number-btn:hover{
+    background: #e5e5e5;
+}
+
+.number-btn:active{
+    background: #d5d5d5;
+    cursor: pointer;
+    box-shadow: inset 0 3px 0 0 #b5b5b5;
 }
 
 .main-footer{
