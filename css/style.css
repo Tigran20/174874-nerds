@@ -51,6 +51,7 @@ p{
 
 .logo{
     display: inline-block;
+    vertical-align: top;
     float: left;
     margin-top: 25px;
     margin-right: 180px;
@@ -74,6 +75,10 @@ p{
     display: inline-block;
     vertical-align: top;
     margin-right: 50px;
+}
+
+.active-item{
+    border-bottom: 2px solid #fb565a;
 }
 
 .main-navigation li:last-child{
@@ -101,13 +106,13 @@ p{
 .shop-basket{
     float: right;
     max-width: 110px;
-    position: relative;
-    margin-top: 55px;
-    vertical-align: top;
 }
 
 .shop-basket a{
+    position: relative;
     display: block;
+    padding-left: 30px;
+    margin-top: 55px;
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -133,11 +138,14 @@ p{
 .shop-basket::before{
     content: "";
     position: absolute;
-    top: 6px;
-    left: -30px;
+    top: 60px;
     width: 18px;
     height: 18px;
     background: transparent url("../img/basket.png") no-repeat;
+}
+
+.shop-basket:hover::before{
+    background: transparent url("../img/basket-hover.png") no-repeat;
 }
 
 .slider{
@@ -166,12 +174,12 @@ p{
 
 .slider-controls label{
     display: inline-block;
+    vertical-align: top;
     width: 4px;
     height: 4px;
     margin: 0 3px;
     background: white;
     border: 3px solid white;
-    vertical-align: top;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -273,9 +281,17 @@ p{
     font-family: "Roboto", "Arial", sans-serif;
     text-decoration: none;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #fff;
     padding: 13px 40px;
     border-radius: 3px;
+}
+
+.slide .btn:hover{
+    background: #d6494d;
+}
+
+.slide .btn:active{
+    background: #b63538;
 }
 
 .red{
@@ -357,7 +373,19 @@ p{
 }
 
 .list-order li{
+    position: relative;
     margin-bottom: 20px;
+    list-style: none;
+}
+
+.list-order li::before{
+    position: absolute;
+    top: 10px;
+    left: -40px;
+    content: "";
+    background-color: red; 
+    width: 25px;
+    height: 2px;
 }
 
 .features-logo{
@@ -375,7 +403,19 @@ p{
 }
 
 .we-work li{
+    position: relative;
     margin-top: 20px;
+    list-style: none;
+}
+
+.we-work li::before{
+    position: absolute;
+    top: 10px;
+    left: -40px;
+    content: "";
+    background-color: red; 
+    width: 25px;
+    height: 2px;
 }
 
 .we-made{
@@ -431,17 +471,13 @@ p{
 
 .contacts{
     position: absolute;
-    top: 86px;
+    top: 87px;
     left: 160px;
-    width: 250px;
-    height: 245px;
-    background-color: #ffffff;
-}
-
-.container-cont{
-    width: 210px;
-    margin-left: 22px;
-    margin-top: 27px;
+    width: 230px;
+    min-height: 215px;
+    padding-left: 25px;
+    padding-top: 30px;
+    background-color: #fff;
 }
 
 .contacts span{
@@ -450,13 +486,13 @@ p{
 
 .street{
     margin-top: 15px;
-    margin-bottom: 20px;
-    color: #666666;
+    margin-bottom: 16px;
+    color: #666;
 }
 
 .tel{
-    margin-bottom: 30px;
-    color: #666666;
+    margin-bottom: 29px;
+    color: #666;
 }
 
 .contacts .btn{
@@ -486,9 +522,10 @@ p{
 }
 
 .shop-title{
+    display: inline-block;
+    vertical-align: top;
     font-size: 40px;
     text-transform: uppercase;
-    display: inline-block;
     line-height: normal;
     text-align: center;
     margin-left: 100px;
@@ -567,8 +604,9 @@ form span{
 }
 
 .price-controls label{
-    font-size: 16px;
     display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
     width: 50%;
 }
 
@@ -674,6 +712,7 @@ label{
 
 input[type="checkbox"]:checked + label span{
     display: inline-block;
+    vertical-align: top;
     width: 26px;
     height: 26px;
     margin: 0 4px 0 0;
@@ -685,6 +724,7 @@ input[type="checkbox"]:checked + label span{
 
 input[type="checkbox"] + label span{
     display: inline-block;
+    vertical-align: top;
     width: 26px;
     height: 26px;
     margin: 0 4px 0 0;
@@ -896,6 +936,7 @@ article:nth-child(odd){
 
 .social-btn{
     display: inline-block;
+    vertical-align: top;
     width: 63px;
     height: 63px;
     margin-right: 20px;
