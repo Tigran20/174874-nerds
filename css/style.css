@@ -995,8 +995,8 @@ article:nth-child(odd){
 }
 
 .modal-content{
+    display: none;
     position: absolute;
-
     left: 50%;
     margin-left: -300px;
     background-color: #fff;
@@ -1075,14 +1075,17 @@ article:nth-child(odd){
     max-height: 200px;
 }
 
-button .btn, .red{
+form button .btn, .red{
      width: 460px;
-     padding: 10px 25px;
      outline: none;
      border: 0 solid #e34761;
      border-radius: 3px;
      cursor: pointer;
      margin-top: 20px;
+}
+
+.modal-content button{
+     padding: 10px 25px;
 }
 
 .form-cont{
