@@ -847,13 +847,69 @@ input[type="checkbox"] + label span{
 article{
     position: relative;
     float: left;
+    z-index: 1;
     margin-right: 80px;
     margin-bottom: 110px;
+    transform-style: preserve-3d;
+    transition: all 1.0s linear;
 }
 
 article:nth-child(odd){
     margin-right: 0px;
 }
+
+.front{
+    cursor: pointer;
+}
+
+.back{
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.container-card{
+    margin-left: 20px;
+    margin-right: 18px;
+    margin-top: 33px;
+}
+
+article .back span{
+    font-weight: 500;
+    font-size: 18px;
+    font-family: "Roboto", "Arial", sans-serif;
+    text-transform: uppercase;
+    margin-left: 40px;
+}
+
+article .back p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Roboto", "Arial", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+article .red{
+    width: 68px;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: "Roboto", "Arial", sans-serif;
+    padding: 10px 34px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+article:hover > div{
+    display: block;
+}
+
 
 .section-navigation{
     margin-left: 325px;
