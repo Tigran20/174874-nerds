@@ -18,7 +18,7 @@ h1, b{
 h3{
     margin: 0;
     margin-top: 16px;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
 }
 
 p{
@@ -53,7 +53,7 @@ p{
     display: inline-block;
     vertical-align: top;
     float: left;
-    margin-top: 25px;
+    margin-top: 28px;
     margin-right: 180px;
 }
 
@@ -74,7 +74,7 @@ p{
 .main-navigation li{
     display: inline-block;
     vertical-align: top;
-    margin-right: 50px;
+    margin-right: 45px;
 }
 
 .active-item{
@@ -106,12 +106,13 @@ p{
 .shop-basket{
     float: right;
     max-width: 110px;
+    margin-right: 3px;
 }
 
 .shop-basket a{
     position: relative;
     display: block;
-    padding-left: 30px;
+    padding-left: 28px;
     margin-top: 55px;
     text-decoration: none;
     font-weight: 500;
@@ -152,7 +153,6 @@ p{
     position: relative;
     width: 880px;
     height: 310px;
-    margin: 0 auto;
     float: left;
 }
 
@@ -163,8 +163,8 @@ p{
 
 .slider-controls{
     position: absolute;
-    bottom: 55px;
-    left: 50%;
+    bottom: 57px;
+    left: 49%;
     width: 200px;
     height: 10px;
     margin-left: -100px;
@@ -201,7 +201,7 @@ p{
 
 .slide-text{
     width: 470px;
-    padding: 30px 0;
+    padding: 28px 0;
     color: #283136;
 }
 
@@ -211,14 +211,14 @@ p{
     font-weight: 500;
     color: black;
     font-family: "Roboto", "Arial", sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .slide .btn{
     display: block;
     width: 240px;
     padding: 10px 0;
-    margin-top: 25px;
+    margin-top: 27px;
     font-size: 12px;
     color: white;
     text-transform: uppercase;
@@ -229,15 +229,15 @@ p{
 }
 
 .slide:nth-child(1){
-    background: url("../img/slider-img-1.png") no-repeat 100% 10px;
+    background: url("../img/slider-img-1.png") no-repeat 100% 7px;
 }
 
 .slide:nth-child(2){
-    background: url("../img/slider-img-2.png") no-repeat 100% 10px;
+    background: url("../img/slider-img-2.png") no-repeat 100% 12px;
 }
 
 .slide:nth-child(3){
-    background: url("../img/slider-img-3.png") no-repeat 100% 0;
+    background: url("../img/slider-img-3.png") no-repeat 100% -12px;
 }
 
 .slide{
@@ -265,6 +265,7 @@ p{
 
 .features-we-work{
     float: right;
+    margin-right: 15px;
 }
 
 .features-item{
@@ -353,7 +354,7 @@ p{
 .features .features-item p{
     font-size: 15px;
     line-height: 22px;
-    margin-bottom: 30px;
+    margin-bottom: 33px;
 }
 
 .features-2{
@@ -384,6 +385,10 @@ p{
     margin-top: 23px;
 }
 
+.we-work-title{
+    margin-left: 4px;
+}
+
 .list-order-title, .we-work-title{
     text-transform: uppercase;
 }
@@ -392,6 +397,7 @@ p{
     position: relative;
     margin-bottom: 22px;
     list-style: none;
+    margin-left: -4px;
 }
 
 .list-order li::before{
@@ -407,16 +413,13 @@ p{
 .features-logo{
     margin-top: 15px;
     margin-bottom: 19px;
-    margin-left: 30px;
+    margin-left: 35px;
 }
 
 .since{
     position: relative;
-    margin-left: 80px;
+    margin-left: 84px;
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: 17px;
-    font-family: "Roboto", "Arial", sans-serif;
 }
 
 .since::before{
@@ -465,8 +468,8 @@ p{
 
 .we-made{
     width: 880px;
-    height: 168px;
-    margin-bottom: 90px;
+    height: 166px;
+    margin-bottom: 86px;
     border-bottom: 2px solid #eee;
 }
 
@@ -474,9 +477,9 @@ p{
     float: left;
     width: 200px;
     height: 40px;
-    margin-left: 20px;
-    margin-top: 70px;
-    margin-right: 120px;
+    margin-left: 10px;
+    margin-top: 67px;
+    margin-right: 118px;
     background: url(../img/order-1.png) no-repeat;
 }
 
@@ -495,8 +498,8 @@ p{
     float: left;
     width: 200px;
     height: 70px;
-    margin-top: 50px;
-    margin-right: 120px;
+    margin-top: 55px;
+    margin-right: 121px;
     background: url(../img/order-2.png) no-repeat;
 }
 
@@ -511,9 +514,9 @@ p{
 
 .we-made-Borodinski{
     float: left;
-    width: 200px;
+    width: 210px;
     height: 90px;
-    margin-top: 42px;
+    margin-top: 44px;
     background: url(../img/order-3.png) no-repeat;
 }
 
@@ -532,12 +535,11 @@ p{
 
 .contacts{
     position: absolute;
-    top: 87px;
+    top: 89px;
     left: 160px;
-    width: 230px;
-    min-height: 215px;
-    padding-left: 25px;
-    padding-top: 30px;
+    width: 226px;
+    padding-left: 22px;
+    padding-top: 27px;
     background-color: #fff;
 }
 
@@ -584,7 +586,7 @@ p{
 }
 
 .inner-header .main-navigation{
-    margin-bottom: 55px;
+    margin-bottom: 60px;
 }
 
 .shop-title{
@@ -594,14 +596,12 @@ p{
     text-transform: uppercase;
     line-height: normal;
     text-align: center;
-    margin-left: 100px;
+    margin-left: 105px;
 }
 
 form span{
-    font-weight: 500;
     font-size: 18px;
-    line-height: 30px;
-    font-family: "Roboto", "Arial", sans-serif;
+    line-height: 28px;
     text-transform: uppercase;
 }
 
@@ -614,7 +614,7 @@ form span{
 .shop-filter{
     width: 240px;
     float: left;
-    margin-right: 80px;
+    margin-right: 79px;
 }
 
 .range-filter{
@@ -747,7 +747,6 @@ form span{
 .radio:not(checked) + label:before{
     content: '';
     position: absolute;
-    top: -3px;
     left: 0;
     width: 18px;
     height: 18px;
@@ -763,7 +762,7 @@ form span{
 .radio:not(checked) + label:after{
     content: '';
     position: absolute;
-    top: 5px;
+    top: 7px;
     left: 8px;
     width: 8px;
     height: 8px;
@@ -856,9 +855,7 @@ input[type="checkbox"]:disabled  + label:after{
     text-transform: uppercase;
     font-weight: 700;
     font-size: 12px;
-    line-height: 18px;
-    font-family: "Roboto", "Arial", sans-serif;
-    margin-top: 37px;
+    margin-top: 42px;
     cursor: pointer;
 }
 
@@ -881,10 +878,11 @@ input[type="checkbox"]:disabled  + label:after{
 .filter{
     position: relative;
     margin-bottom: 50px;
+    margin-left: -3px;
 }
 
 .filter span{
-    margin-right: 30px;
+    margin-right: 36px;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 12px;
@@ -900,7 +898,7 @@ input[type="checkbox"]:disabled  + label:after{
     font-size: 12px;
     line-height: 18px;
     font-family: "Roboto", "Arial", sans-serif;
-    margin-right: 45px;
+    margin-right: 42px;
     border-bottom: 1px dotted #00ca74; 
 }
 
@@ -957,13 +955,19 @@ article{
     float: left;
     z-index: 1;
     margin-right: 80px;
-    margin-bottom: 105px;
+    margin-bottom: 104px;
     transform-style: preserve-3d;
+}
+
+article:nth-child(6){
+    margin-bottom: 80px;
 }
 
 article:nth-child(odd){
     margin-right: 0px;
+    margin-bottom: 76px;
 }
+
 
 .front{
     cursor: pointer;
@@ -1039,7 +1043,7 @@ article:hover > div{
 
 
 .section-navigation{
-    margin-left: 325px;
+    margin-left: 318px;
     margin-bottom: 90px;
 }
 
@@ -1117,8 +1121,8 @@ article:hover > div{
 
 .social{
     float: left;
-    margin-top: 80px;
-    margin-right: 55px;
+    margin-top: 70px;
+    margin-right: 58px;
 }
 
 .social-btn{
@@ -1126,7 +1130,7 @@ article:hover > div{
     vertical-align: top;
     width: 63px;
     height: 63px;
-    margin-right: 20px;
+    margin-right: 22px;
     font-size: 0;
     vertical-align: top;
     text-decoration: none;
@@ -1170,7 +1174,7 @@ article:hover > div{
 
 .offer{
     float: left;
-    margin-top: 80px;
+    margin-top: 67px;
 }
 
 .offer p{
