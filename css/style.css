@@ -292,6 +292,8 @@ p{
 
 .slide .btn:active{
     background: #b63538;
+    cursor: pointer;
+    box-shadow: inset 0 3px 0 0 #9b2d30;
 }
 
 .red{
@@ -304,6 +306,8 @@ p{
 
 .red:active{
     background-color: #b63538;
+    cursor: pointer;
+    box-shadow: inset 0 3px 0 0 #9b2d30;
 }
 
 .green{
@@ -316,6 +320,8 @@ p{
 
 .green:active{
     background-color: #009053;
+    cursor: pointer;
+    box-shadow: inset 0 3px 0 0 #007b47;
 }
 
 .yellow{
@@ -328,6 +334,8 @@ p{
 
 .yellow:active{
     background-color: #c09b24;
+    cursor: pointer;
+    box-shadow: inset 0 3px 0 0 #a3841f;
 }
 
 .features-item:last-child{
@@ -358,14 +366,22 @@ p{
 .features-about{
     float: left;
     width: 600px;
-    margin-bottom: 60px;
+    margin-bottom: 48px;
+}
+
+.features-about h1{
+    margin-bottom: 18px;
 }
 
 .list-order{
     float: left;
     width: 440px;
     min-height: 160px;
-    margin-top: 35px;
+    margin-top: 44px;
+}
+
+.list-order ul{
+    margin-top: 23px;
 }
 
 .list-order-title, .we-work-title{
@@ -374,7 +390,7 @@ p{
 
 .list-order li{
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     list-style: none;
 }
 
@@ -390,21 +406,50 @@ p{
 
 .features-logo{
     margin-top: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 19px;
+    margin-left: 30px;
 }
 
 .since{
-    margin-left: 50px;
+    position: relative;
+    margin-left: 80px;
     text-transform: uppercase;
+    font-weight: 700;
+    font-size: 17px;
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+.since::before{
+    position: absolute;
+    top: 10px;
+    left: -80px;
+    content: "";
+    background-color: #eee; 
+    width: 65px;
+    height: 2px;
+}
+
+.since::after{
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    content: "";
+    background-color: #eee; 
+    width: 65px;
+    height: 2px;
 }
 
 .we-work{
-    margin-top: 50px;
+    margin-top: 65px;
+}
+
+.we-work ul{
+    margin-top: 23px;
 }
 
 .we-work li{
     position: relative;
-    margin-top: 20px;
+    margin-bottom: 22px;
     list-style: none;
 }
 
@@ -440,6 +485,12 @@ p{
     background: url(../img/order-1-hover.png) no-repeat;
 }
 
+.we-made-Glukhanko:active{
+    float: left;
+    background: url(../img/order-1-hover.png) no-repeat;
+    cursor: pointer;
+}
+
 .we-made-HTML-AC{
     float: left;
     width: 200px;
@@ -453,6 +504,11 @@ p{
     background: url(../img/order-2-hover.png) no-repeat;
 }
 
+.we-made-HTML-AC:active{
+    background: url(../img/order-2-hover.png) no-repeat;
+    cursor: pointer;
+}
+
 .we-made-Borodinski{
     float: left;
     width: 200px;
@@ -463,6 +519,11 @@ p{
 
 .we-made-Borodinski:hover{
     background: url(../img/order-3-hover.png) no-repeat;
+}
+
+.we-made-Borodinski:active{
+    background: url(../img/order-3-hover.png) no-repeat;
+    cursor: pointer;
 }
 
 .map{
@@ -518,6 +579,8 @@ p{
 
 .contacts .btn:active{
     background-color: #b63538;
+    cursor: pointer;
+    box-shadow: inset 0 3px 0 0 #9b2d30;
 }
 
 .inner-header .main-navigation{
@@ -661,22 +724,27 @@ form span{
     margin: 0 3px 0 0;
 }
 
-.radio:not(checked) + label {
+.radio:not(checked) + label{
     position: relative;
-    padding: 0 0 0 35px;
+    padding: 0 0 0 30px;
 }
 
-.radio + label {
+.radio + label{
     cursor: pointer;
+    color: #283136;
 }
 
-.radio[type="radio"] + label span {
+.radio + label:hover{
+    color: #000;
+}
+
+.radio[type="radio"] + label span{
     display: inline-block;
     vertical-align: top;
     margin-bottom: 40px;
 }
 
-.radio:not(checked) + label:before {
+.radio:not(checked) + label:before{
     content: '';
     position: absolute;
     top: -3px;
@@ -688,11 +756,11 @@ form span{
     background: #fff;
 }
 
-.radio:checked + label:after {
+.radio:checked + label:after{
     opacity: 1;
 }
 
-.radio:not(checked) + label:after {
+.radio:not(checked) + label:after{
     content: '';
     position: absolute;
     top: 5px;
@@ -706,36 +774,87 @@ form span{
     transition: all .2s;
 }
 
+.radio:not(checked) + label:hover:before{
+    border: 3px solid #b5b5b5;
+}
+
+.radio:not(checked) + label:hover:after{
+    background: #b5b5b5;
+}
+
+input[type="radio"]:disabled  + label{
+    color: #e9e9e9;
+} 
+
+input[type="radio"]:disabled  + label:before{
+    border: 3px solid #e9e9e9;
+}
+
+input[type="radio"]:disabled  + label:after{
+    background: #e9e9e9;
+}
+
 input[type="checkbox"]{
     display: none;
 }
 
-label{
-    cursor: pointer;
-}
-
-input[type="checkbox"]:checked + label span{
+.checkbox[type="checkbox"] + label span{
     display: inline-block;
     vertical-align: top;
-    width: 26px;
-    height: 26px;
-    margin: 0 4px 0 0;
-    margin-bottom: 13px;
-    vertical-align: top;
-    background: url("../img/checkbox-checked.png") no-repeat;
-    cursor: pointer;
+    margin-bottom: 40px;
 }
 
-input[type="checkbox"] + label span{
-    display: inline-block;
-    vertical-align: top;
+.checkbox + label{
+    position: relative;
+    padding: 0 0 0 30px;
+    cursor: pointer;
+    color: #283136;
+}
+
+.checkbox + label:hover{
+    color: #000;
+}
+
+.checkbox + label:before{
+    content: '';
+    position: absolute;
+    left: 0;
     width: 26px;
     height: 26px;
-    margin: 0 4px 0 0;
-    margin-bottom: 13px;
-    vertical-align: top;
     background: url("../img/checkbox-unchecked.png") no-repeat;
     cursor: pointer;
+    opacity: 0.8;
+}
+
+.checkbox + label:hover:before{
+    opacity: 1;
+}
+
+.checkbox:checked + label:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    background: url("../img/checkbox-checked.png") no-repeat;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.checkbox + label:hover:after{
+    opacity: 1;
+}
+
+input[type="checkbox"]:disabled  + label{
+    color: #e9e9e9;
+} 
+
+input[type="checkbox"]:disabled  + label:before{
+    opacity: 0.3;
+}
+
+input[type="checkbox"]:disabled  + label:after{
+    opacity: 0.3;
 }
 
 .submit{
@@ -849,9 +968,8 @@ article{
     float: left;
     z-index: 1;
     margin-right: 80px;
-    margin-bottom: 110px;
+    margin-bottom: 105px;
     transform-style: preserve-3d;
-    transition: all 1.0s linear;
 }
 
 article:nth-child(odd){
@@ -877,33 +995,53 @@ article:nth-child(odd){
     margin-left: 20px;
     margin-right: 18px;
     margin-top: 33px;
+    position: relative;
 }
 
-article .back span{
+.img-top{
+    position: absolute;
+    top: -30px;
+    left: 0;
+}
+
+.back img{
+    position: absolute;
+    top: -50px;
+    left: -20px;
+}
+
+.front-title{
     font-weight: 500;
     font-size: 18px;
     font-family: "Roboto", "Arial", sans-serif;
     text-transform: uppercase;
-    margin-left: 40px;
+    text-align: center;
+    margin: 0 auto;
 }
 
-article .back p{
+.front-text{
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
     font-family: "Roboto", "Arial", sans-serif;
-    margin-top: 10px;
+    margin-top: 13px;
     margin-bottom: 30px;
+    text-align: center;
+}
+
+article:nth-child(5) .front-text{
+    margin-bottom: 12px;
+    margin-top: 7px;
 }
 
 article .red{
-    width: 68px;
+    width: 94px;
     font-weight: 500;
     font-size: 18px;
     font-family: "Roboto", "Arial", sans-serif;
-    padding: 10px 34px;
+    padding: 10px 24px;
     text-align: center;
-    margin-left: 10px;
+    margin: 0 auto;
 }
 
 article:hover > div{
@@ -1132,16 +1270,16 @@ article:hover > div{
 }
 
 form button .btn, .red{
-     width: 460px;
-     outline: none;
-     border: 0 solid #e34761;
-     border-radius: 3px;
-     cursor: pointer;
-     margin-top: 20px;
+    width: 460px;
+    outline: none;
+    border: 0 solid #e34761;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 20px;
 }
 
 .modal-content button{
-     padding: 10px 25px;
+    padding: 10px 25px;
 }
 
 .form-cont{
