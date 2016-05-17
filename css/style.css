@@ -1,5 +1,5 @@
 body {
-  width: 1200px;
+  min-width: 880px;
   margin: 0 auto;
 
   font-weight: 500;
@@ -38,6 +38,8 @@ p {
 .container {
   width: 880px;
   margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .main-header {
@@ -531,7 +533,6 @@ p {
   height: 40px;
   margin-top: 67px;
   margin-right: 118px;
-  margin-left: 10px;
 
   opacity: 0.3;
 }
@@ -591,6 +592,9 @@ p {
 
   width: 1200px;
   height: 416px;
+  margin: 0 auto;
+
+  background-image: url(../img/map.jpg);
 }
 
 .contacts {
