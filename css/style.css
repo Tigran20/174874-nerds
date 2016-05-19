@@ -668,7 +668,8 @@ p {
 
 .shop-title {
   display: block;
-  margin-left: -15px;
+  margin: 0 auto;
+  padding-right: 19px;
 
   font-size: 40px;
   line-height: normal;
